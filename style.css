@@ -1,0 +1,134 @@
+.ring-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0px;
+}
+.ring {
+  position: relative;
+  width: 108px;
+  height: 108px;
+  background: conic-gradient(var(--progress-color) var(--progress, 0), #ddd 0);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-img {
+  width: 80%;
+  margin: 5px 0px;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.card-img img {
+  width: 60%;
+  height: 30vh;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.ring::before,
+.ring1::before,
+.ring2::before {
+  content: "";
+  position: absolute;
+  width: 98px;
+  height: 98px;
+  background: #fff;
+  border-radius: 50%;
+}
+.ring1::before {
+  width: 140px;
+  height: 140px;
+}
+.ring2::before {
+  width: 220px;
+  height: 220px;
+}
+.ring:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.ring span {
+  position: relative;
+  font-size: 0.8em;
+  font-weight: bold;
+  z-index: 1;
+}
+.ring1 span {
+  font-size: 1em;
+}
+.ring2 span {
+  font-size: 1.5em;
+}
+.linkedin > a {
+  text-decoration: none;
+  /* margin: 0px 2px; */
+}
+@media (max-width: 768px) {
+  .ring-container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+/* About Section */
+.about {
+  background-color: #a7beae;
+}
+.abt-col1 .card {
+  align-items: center;
+  background-color: #e7e8d1;
+  border-radius: 5%;
+}
+.card-body {
+  color: #1e2761;
+}
+/* about column 2 */
+.abt-col2 {
+  background-color: #a7beae;
+}
+.abt-col2 p {
+  /* padding: 15px; */
+  color: #2a3132;
+}
+.abt-col2 h4 {
+  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
+  color: #fff;
+  padding: 5px;
+}
+/* About Row2 Column1 */
+.row2-col1 {
+  background-color: #e7e8d1;
+  border-radius: 15px;
+}
+
+/* Project Section */
+.project-section {
+  background-color: #e7e8d1;
+}
+.prjt-row1 h4 {
+  text-align: center;
+  margin: 15px 0px;
+}
+.prjt-row1 .col-md-3 .card {
+  border-radius: 10px;
+}
+.prjt-row1 .col-md-3 .card img {
+  border-radius: 10px;
+  height: 200px;
+}
+.btn-primary {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+/* footer */
+.footer p {
+  text-align: center;
+  color: #fff;
+  padding: 15px 0px;
+  margin: 10px 0px 0px 0px;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
